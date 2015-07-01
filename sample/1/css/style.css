@@ -49,6 +49,21 @@ html, body, .scence {
     background-size: cover;
 }
 
+/*第三页*/
+.c-bg {
+    background: url(../img/3-bg.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.c-bg-mask {
+    background: url(../img/3-bg-mask.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.born .c-bg-mask {
+    -webkit-animation: shade-out 2s ease-out 4s forwards;
+}
+
 /*动画*/
 @-webkit-keyframes shade-out {
     0% {
