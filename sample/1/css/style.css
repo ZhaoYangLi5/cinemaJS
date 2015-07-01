@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    -webkit-user-select: none;
+}
+
+html, body, .scence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.a-bg-mask {
+    background: url(../img/1-bg-mask.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.a-bg {
+    background: url(../img/1-bg.jpeg) no-repeat center center;
+    background-size: cover;
+}
