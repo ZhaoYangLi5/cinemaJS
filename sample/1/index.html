@@ -18,5 +18,13 @@
 </div>
 <div class="scence scence-2"></div>
 <div class="scence scence-3"></div>
+<script>
+    (function () {
+        var scences = document.querySelectorAll( ".scence" );
+        setTimeout( function () {
+            scences[0].classList.add( "born" );
+        }, 3000 );
+    })();
+</script>
 </body>
 </html>

@@ -25,7 +25,21 @@ html, body, .scence {
     background-size: cover;
 }
 
+.born .a-bg-mask {
+    -webkit-animation: shade-out 2s ease-out 0s forwards;
+}
+
 .a-bg {
     background: url(../img/1-bg.jpeg) no-repeat center center;
     background-size: cover;
+}
+
+/*动画*/
+@-webkit-keyframes shade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
