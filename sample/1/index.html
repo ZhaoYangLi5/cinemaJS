@@ -45,7 +45,7 @@
         util.loopArray( scences, function ( s, i ) {
             TimeLine.push( new Scence( {
                 el : s,
-                leftTime : 4
+                lifeTime : 4
             } ) );
             document.body.removeChild( s );
         } );
@@ -54,18 +54,18 @@
         var curindex = 0;
 
         function play() {
-            function playOneScence( index ) {
-                TimeLine[index].born();
-                document.body.appendChild( TimeLine[index].el );
+            function playOneScence() {
+                TimeLine[curindex].born();
+                document.body.appendChild( TimeLine[curindex].el );
                 setTimeout( function () {
-                    document.body.removeChild( TimeLine[index].el );
-                    TimeLine[index].el.classList.remove( "born" );
-                    index = (index + 1) % TimeLine.length;
-                    playOneScence( index );
-                }, TimeLine[index].leftTime * 1000 );
+                    document.body.removeChild( TimeLine[curindex].el );
+                    TimeLine[curindex].el.classList.remove( "born" );
+                    curindex = (curindex + 1) % TimeLine.length;
+                    playOneScence();
+                }, TimeLine[curindex].lifeTime * 1000 );
             }
 
-            playOneScence( curindex );
+            playOneScence();
         }
 
         play();
