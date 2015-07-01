@@ -64,6 +64,34 @@ html, body, .scence {
     -webkit-animation: shade-out 2s ease-out 4s forwards;
 }
 
+.door-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: url(../img/3-mask-2.jpeg) no-repeat left bottom;
+    background-size: 100% auto;
+}
+
+.born .door-up {
+    -webkit-animation: go-up 2s ease-out 1s forwards;
+}
+
+.door-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: url(../img/3-mask.jpeg) no-repeat left top;
+    background-size: 100% auto;
+}
+
+.born .door-down {
+    -webkit-animation: go-down 2s ease-out 1s forwards;
+}
+
 /*动画*/
 @-webkit-keyframes shade-out {
     0% {
@@ -84,6 +112,26 @@ html, body, .scence {
     }
     100% {
         -webkit-transform: translate3d(-50%, 0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes go-up {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes go-down {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 100%, 0);
         opacity: 0;
     }
 }
