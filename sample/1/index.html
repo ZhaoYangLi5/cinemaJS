@@ -12,14 +12,14 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<!--<div class="scence scence-1">-->
-<!--<div class="bg a-bg"></div>-->
-<!--<div class="bg a-bg-mask"></div>-->
-<!--</div>-->
-<!--<div class="scence scence-2">-->
-<!--<div class="bg b-bg"></div>-->
-<!--<div class="bg b-bg-mask"></div>-->
-<!--</div>-->
+<div class="scence scence-1">
+    <div class="bg a-bg"></div>
+    <div class="bg a-bg-mask"></div>
+</div>
+<div class="scence scence-2">
+    <div class="bg b-bg"></div>
+    <div class="bg b-bg-mask"></div>
+</div>
 <div class="scence scence-3">
     <div class="bg c-bg"></div>
     <div class="bg c-bg-mask"></div>
@@ -30,15 +30,45 @@
 <script>
     main( function () {
         var insertCSS = imports( "../../lib/css.js" ).insertCSSRules;
-        var height = document.body.offsetHeight;
+        var Scence = imports( "../../lib/cinema.js" ).Scence;
+        var util = imports( "../../lib/util.js" );
+
+        var TimeLine = [];
+        var scences = document.querySelectorAll( ".scence" );
+
         insertCSS( {
             ".bg.b-bg-mask" : {
-                width : height / 1008 * 1417 + "px"
+                width : document.body.offsetHeight / 1008 * 1417 + "px"
             }
         } );
 
-        var scences = document.querySelectorAll( ".scence" );
-        scences[0].classList.add( "born" );
+        util.loopArray( scences, function ( s, i ) {
+            TimeLine.push( new Scence( {
+                el : s,
+                leftTime : 4
+            } ) );
+            document.body.removeChild( s );
+        } );
+
+
+        var curindex = 0;
+
+        function play() {
+            function playOneScence( index ) {
+                TimeLine[index].born();
+                document.body.appendChild( TimeLine[index].el );
+                setTimeout( function () {
+                    document.body.removeChild( TimeLine[index].el );
+                    TimeLine[index].el.classList.remove( "born" );
+                    index = (index + 1) % TimeLine.length;
+                    playOneScence( index );
+                }, TimeLine[index].leftTime * 1000 );
+            }
+
+            playOneScence( curindex );
+        }
+
+        play();
     } );
 </script>
 </body>
