@@ -16,8 +16,8 @@ html, body, .scence {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
+    height: 100%;
+    width: 100%;;
 }
 
 .a-bg-mask {
@@ -34,12 +34,41 @@ html, body, .scence {
     background-size: cover;
 }
 
+/*第二页*/
+.b-bg-mask {
+    background: url(../img/2-bg-mask.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.born .b-bg-mask {
+    -webkit-animation: slide 4s ease-out 0s forwards;
+}
+
+.b-bg {
+    background: url(../img/2-bg.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
 /*动画*/
 @-webkit-keyframes shade-out {
     0% {
         opacity: 1;
     }
     100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        left: 0;
+    }
+    50% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
         opacity: 0;
     }
 }

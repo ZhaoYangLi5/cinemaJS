@@ -12,19 +12,29 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="scence scence-1">
-    <div class="bg a-bg"></div>
-    <div class="bg a-bg-mask"></div>
+<!--<div class="scence scence-1">-->
+<!--<div class="bg a-bg"></div>-->
+<!--<div class="bg a-bg-mask"></div>-->
+<!--</div>-->
+<div class="scence scence-2">
+    <div class="bg b-bg"></div>
+    <div class="bg b-bg-mask"></div>
 </div>
-<div class="scence scence-2"></div>
 <div class="scence scence-3"></div>
+<script src="../../lib/package.js"></script>
 <script>
-    (function () {
+    main( function () {
+        var insertCSS = imports( "../../lib/css.js" ).insertCSSRules;
+        var height = document.body.offsetHeight;
+        insertCSS( {
+            ".bg.b-bg-mask" : {
+                width : height / 1008 * 1417 + "px"
+            }
+        } );
+
         var scences = document.querySelectorAll( ".scence" );
-        setTimeout( function () {
-            scences[0].classList.add( "born" );
-        }, 3000 );
-    })();
+        scences[0].classList.add( "born" );
+    } );
 </script>
 </body>
 </html>
