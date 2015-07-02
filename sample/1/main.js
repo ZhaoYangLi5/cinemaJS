@@ -18,12 +18,12 @@ main( function () {
     } );
 
     var musics = ["audio/1.mp3", "audio/2.mp3", "audio/3.mp3"];
-
+    var lefeTimes = [7, 7, 5];
     // 组建TimeLine
     util.loopArray( scences, function ( s, i ) {
         TimeLine.push( new Scence( {
             el : s,
-            lifeTime : 4,
+            lifeTime : lefeTimes[i],
             audio : {
                 src : musics[i],
                 delay : 0,
