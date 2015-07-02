@@ -10,6 +10,7 @@ html, body, .scence {
     bottom: 0;
     right: 0;
     overflow: hidden;
+    background: black;
 }
 
 .bg {
@@ -47,6 +48,10 @@ html, body, .scence {
 .b-bg {
     background: url(../img/2-bg.jpeg) no-repeat center center;
     background-size: cover;
+}
+
+.born .b-bg {
+    -webkit-animation: fade-in 2s ease-out 2s both;
 }
 
 /*第三页*/
@@ -105,14 +110,27 @@ html, body, .scence {
 @-webkit-keyframes slide {
     0% {
         left: 0;
+        opacity: 0.2;
+    }
+    20% {
+        opacity: 1;
     }
     50% {
         -webkit-transform: translate3d(-50%, 0, 0);
         opacity: 1;
     }
     100% {
-        -webkit-transform: translate3d(-50%, 0, 0);
+        -webkit-transform: translate3d(-50%, 0, 0) scale(2);
         opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
