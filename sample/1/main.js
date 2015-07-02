@@ -34,15 +34,15 @@ main( function () {
 
     var subtitles = [
         {
-            time : 0,
+            duration : 8,
             text : "人们常说：单身只有两种情况：一种不知道什么叫做，爱。"
         },
         {
-            time : 8,
+            duration : 8,
             text : "另一种不知道什么叫，做爱。两种都懂，你就碉堡了。"
         },
         {
-            time : 8,
+            duration : 8,
             text : "呀！我口红找不见了。"
         }
     ];
