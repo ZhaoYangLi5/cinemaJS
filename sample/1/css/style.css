@@ -97,6 +97,17 @@ html, body, .scence {
     -webkit-animation: go-down 2s ease-out 1s forwards;
 }
 
+.subtitles-border {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    height: auto;
+    font-family: Microsoft YaHei;
+    font-size: 20px;
+    z-index: 100;
+}
+
 /*动画*/
 @-webkit-keyframes shade-out {
     0% {
