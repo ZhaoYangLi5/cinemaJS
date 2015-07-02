@@ -27,49 +27,6 @@
     <div class="door-down"></div>
 </div>
 <script src="../../lib/package.js"></script>
-<script>
-    main( function () {
-        var insertCSS = imports( "../../lib/css.js" ).insertCSSRules;
-        var Scence = imports( "../../lib/cinema.js" ).Scence;
-        var util = imports( "../../lib/util.js" );
-
-        var TimeLine = [];
-        var scences = document.querySelectorAll( ".scence" );
-
-        insertCSS( {
-            ".bg.b-bg-mask" : {
-                width : document.body.offsetHeight / 1008 * 1417 + "px"
-            }
-        } );
-
-        util.loopArray( scences, function ( s, i ) {
-            TimeLine.push( new Scence( {
-                el : s,
-                lifeTime : 4
-            } ) );
-            document.body.removeChild( s );
-        } );
-
-
-        var curIndex = 0;
-
-        function play() {
-            function playOneScence() {
-                TimeLine[curIndex].born();
-                document.body.appendChild( TimeLine[curIndex].el );
-                setTimeout( function () {
-                    document.body.removeChild( TimeLine[curIndex].el );
-                    TimeLine[curIndex].el.classList.remove( "born" );
-                    curIndex = (curIndex + 1) % TimeLine.length;
-                    playOneScence();
-                }, TimeLine[curIndex].lifeTime * 1000 );
-            }
-
-            playOneScence();
-        }
-
-        play();
-    } );
-</script>
+<script src="main.js"></script>
 </body>
 </html>
