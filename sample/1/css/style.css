@@ -146,9 +146,13 @@ html, body, .scence {
     background-size: cover;
 }
 
+.born .s4-cloud {
+    -webkit-animation: fade-in 2s ease-out 1s both;
+}
+
 /*第5页*/
 .born.scence-5 {
-    -webkit-animation: page-animate 8s ease-out both;
+    -webkit-animation: page-animate 13s ease-out both;
 }
 
 .s5-mask {
@@ -157,7 +161,7 @@ html, body, .scence {
 }
 
 .born .s5-mask {
-    -webkit-animation: fade-out 3s ease-out both;
+    -webkit-animation: fade-out-with-bigger 3s ease-out both;
 }
 
 .s5-bg2 {
@@ -166,7 +170,7 @@ html, body, .scence {
 }
 
 .born .s5-bg2 {
-    -webkit-animation: fade-out 3s ease-out 2s both;
+    -webkit-animation: fade-out 5s ease-out 3s both;
 }
 
 .s5-cloud1 {
@@ -174,9 +178,17 @@ html, body, .scence {
     background-size: cover;
 }
 
+.born .s5-cloud1 {
+    -webkit-animation: fade-in 2s ease-out 1s both;
+}
+
 .s5-cloud2 {
     background: url("../img/5-cloud2.png") no-repeat center center;
     background-size: cover;
+}
+
+.born .s5-cloud2 {
+    -webkit-animation: fade-in 2s ease-out 2s both;
 }
 
 .s5-bg {
@@ -194,9 +206,17 @@ html, body, .scence {
     background-size: cover;
 }
 
+.born .s6-mask {
+    -webkit-animation: fade-out-with-bigger 3s ease-out both;
+}
+
 .s6-cloud {
     background: url("../img/6-cloud.png") no-repeat center center;
     background-size: cover;
+}
+
+.born .s6-cloud {
+    -webkit-animation: fade-in 2s ease-out 1s both;
 }
 
 .s6-mask {
@@ -219,6 +239,10 @@ html, body, .scence {
     background-size: cover;
 }
 
+.born .s7-cloud {
+    -webkit-animation: fade-in 2s ease-out 1s both;
+}
+
 .s7-face {
     background: url("../img/7-face.png") no-repeat center center;
     background-size: cover;
@@ -239,9 +263,17 @@ html, body, .scence {
     background-size: cover;
 }
 
+.born .s8-cloud {
+    -webkit-animation: fade-in 2s ease-out 1s both;
+}
+
 .s8-mask {
     background: url("../img/8-mask.jpeg") no-repeat center center;
     background-size: cover;
+}
+
+.born .s8-mask {
+    -webkit-animation: fade-out-with-bigger 3s ease-out both;
 }
 
 /*第9页*/
@@ -257,6 +289,10 @@ html, body, .scence {
 .s9-cloud {
     background: url("../img/9-cloud.png") no-repeat center center;
     background-size: cover;
+}
+
+.born .s9-cloud {
+    -webkit-animation: fade-in 2s ease-out 1s both;
 }
 
 /*动画*/
@@ -302,6 +338,20 @@ html, body, .scence {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade-out-with-bigger {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(3);
     }
 }
 
