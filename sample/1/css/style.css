@@ -152,7 +152,7 @@ html, body, .scence {
 
 /*第5页*/
 .born.scence-5 {
-    -webkit-animation: page-animate 13s ease-out both;
+    -webkit-animation: page-animate 15s ease-out both;
 }
 
 .s5-mask {
@@ -179,7 +179,7 @@ html, body, .scence {
 }
 
 .born .s5-cloud1 {
-    -webkit-animation: fade-in 2s ease-out 1s both;
+    -webkit-animation: fade-in 2s ease-out 5s both;
 }
 
 .s5-cloud2 {
@@ -188,7 +188,7 @@ html, body, .scence {
 }
 
 .born .s5-cloud2 {
-    -webkit-animation: fade-in 2s ease-out 2s both;
+    -webkit-animation: fade-in 2s ease-out 6s both;
 }
 
 .s5-bg {
@@ -216,7 +216,7 @@ html, body, .scence {
 }
 
 .born .s6-cloud {
-    -webkit-animation: fade-in 2s ease-out 1s both;
+    -webkit-animation: fade-in 2s ease-out 3s both;
 }
 
 .s6-mask {
@@ -240,12 +240,16 @@ html, body, .scence {
 }
 
 .born .s7-cloud {
-    -webkit-animation: fade-in 2s ease-out 1s both;
+    -webkit-animation: fade-in 2s ease-out 2s both;
 }
 
 .s7-face {
     background: url("../img/7-face.png") no-repeat center center;
     background-size: cover;
+}
+
+.born .s7-face {
+    -webkit-animation: shake 2s ease-out infinite both;
 }
 
 /*第8页*/
@@ -264,7 +268,7 @@ html, body, .scence {
 }
 
 .born .s8-cloud {
-    -webkit-animation: fade-in 2s ease-out 1s both;
+    -webkit-animation: fade-in 2s ease-out 3s both;
 }
 
 .s8-mask {
@@ -387,5 +391,23 @@ html, body, .scence {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+    }
+    25% {
+        -webkit-transform: rotateZ(-2deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(0deg);
+    }
+    75% {
+        -webkit-transform: rotateZ(2deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
     }
 }

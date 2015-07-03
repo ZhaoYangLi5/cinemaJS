@@ -58,7 +58,7 @@ main( function () {
         }
     ];
 
-    var ScenceTime = [8, 8, 8, 8, 10, 8, 8, 8, 8];
+    var ScenceTime = [8, 8, 8, 8, 15, 8, 8, 8, 8];
     // 组建TimeLine
     util.loopArray( scences, function ( s, i ) {
         TimeLine.push( new Scence( {
