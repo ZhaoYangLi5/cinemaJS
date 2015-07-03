@@ -108,6 +108,101 @@ html, body, .scence {
     z-index: 100;
 }
 
+.s3-cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/3-cloud.png") no-repeat center center;
+    background-size: cover;
+}
+
+/*第4页*/
+.s4-bg {
+    background: url(../img/3-bg.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.s4-cloud {
+    background: url("../img/4-cloud.png") no-repeat center center;
+    background-size: cover;
+}
+
+/*第5页*/
+.s5-mask {
+    background: url("../img/5-mask.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+.s5-bg2 {
+    background: url("../img/5-bg2.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+.s5-cloud1 {
+    background: url("../img/5-cloud1.png") no-repeat center center;
+    background-size: cover;
+}
+
+.s5-cloud2 {
+    background: url("../img/5-cloud2.png") no-repeat center center;
+    background-size: cover;
+}
+
+.s5-bg {
+    background: url("../img/5-bg.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+/*第6页*/
+.s6-bg {
+    background: url("../img/6-bg.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+.s6-cloud {
+    background: url("../img/6-cloud.png") no-repeat center center;
+    background-size: cover;
+}
+
+.s6-mask {
+    background: url("../img/6-mask.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+/*第7页*/
+.s7-bg {
+    background: url("../img/7-bg.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+.s7-cloud {
+    background: url("../img/7-cloud.png") no-repeat center center;
+    background-size: cover;
+}
+
+.s7-face {
+    background: url("../img/7-face.png") no-repeat center center;
+    background-size: cover;
+}
+
+/*第8页*/
+.s8-bg {
+    background: url("../img/8-bg.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+.s8-cloud {
+    background: url("../img/8-cloud.png") no-repeat center center;
+    background-size: cover;
+}
+
+.s8-mask {
+    background: url("../img/8-mask.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
 /*动画*/
 @-webkit-keyframes shade-out {
     0% {
