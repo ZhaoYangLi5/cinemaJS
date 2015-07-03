@@ -57,11 +57,13 @@ main( function () {
             delay : 0
         }
     ];
+
+    var ScenceTime = [8, 8, 8, 8, 10, 8, 8, 8, 8];
     // 组建TimeLine
     util.loopArray( scences, function ( s, i ) {
         TimeLine.push( new Scence( {
             el : s,
-            lifeTime : 8,
+            lifeTime : ScenceTime[i],
             //audio : {
             //src : musics[i],
             //delay : 0,
