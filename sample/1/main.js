@@ -35,6 +35,7 @@ main( function () {
     var subtitles = [
         {
             duration : 8,
+            //lifeTime:,
             text : "人们常说：单身只有两种情况：一种不知道什么叫做，爱。"
         },
         {
