@@ -21,6 +21,11 @@ html, body, .scence {
     width: 100%;;
 }
 
+/*第1页*/
+.born.scence-1 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .a-bg-mask {
     background: url(../img/1-bg-mask.jpeg) no-repeat center center;
     background-size: cover;
@@ -36,6 +41,10 @@ html, body, .scence {
 }
 
 /*第二页*/
+.born.scence-2 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .b-bg-mask {
     background: url(../img/2-bg-mask.jpeg) no-repeat center center;
     background-size: cover;
@@ -55,6 +64,10 @@ html, body, .scence {
 }
 
 /*第三页*/
+.born.scence-3 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .c-bg {
     background: url(../img/3-bg.jpeg) no-repeat center center;
     background-size: cover;
