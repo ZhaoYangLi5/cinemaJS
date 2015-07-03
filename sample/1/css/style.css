@@ -124,12 +124,20 @@ html, body, .scence {
     background-size: cover;
 }
 
+.born.scence-4 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .s4-cloud {
     background: url("../img/4-cloud.png") no-repeat center center;
     background-size: cover;
 }
 
 /*第5页*/
+.born.scence-5 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .s5-mask {
     background: url("../img/5-mask.jpeg") no-repeat center center;
     background-size: cover;
@@ -156,6 +164,10 @@ html, body, .scence {
 }
 
 /*第6页*/
+.born.scence-6 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .s6-bg {
     background: url("../img/6-bg.jpeg") no-repeat center center;
     background-size: cover;
@@ -172,6 +184,10 @@ html, body, .scence {
 }
 
 /*第7页*/
+.born.scence-7 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .s7-bg {
     background: url("../img/7-bg.jpeg") no-repeat center center;
     background-size: cover;
@@ -188,6 +204,10 @@ html, body, .scence {
 }
 
 /*第8页*/
+.born.scence-8 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .s8-bg {
     background: url("../img/8-bg.jpeg") no-repeat center center;
     background-size: cover;
@@ -203,7 +223,11 @@ html, body, .scence {
     background-size: cover;
 }
 
-/*第8页*/
+/*第9页*/
+.born.scence-9 {
+    -webkit-animation: page-animate 8s ease-out both;
+}
+
 .s9-bg {
     position: absolute;
     height: 100%;
@@ -267,6 +291,21 @@ html, body, .scence {
     }
     100% {
         -webkit-transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes page-animate {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
         opacity: 0;
     }
 }

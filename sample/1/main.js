@@ -17,7 +17,46 @@ main( function () {
         }
     } );
 
-    var musics = ["audio/1.mp3", "audio/2.mp3", "audio/3.mp3"];
+    var musics = [
+        {
+            src : "audio/1.mp3",
+            lifeTime : 8,
+            delay : 0
+        }, {
+            src : "audio/2.mp3",
+            lifeTime : 8,
+            delay : 0
+        }, {
+            src : "audio/3.mp3",
+            lifeTime : 8,
+            delay : 0
+        }, {
+            src : "audio/4.mp3",
+            lifeTime : 8,
+            delay : 0
+        }, {
+            src : "audio/5.mp3",
+            lifeTime : 8,
+            delay : 0
+        },
+        {
+            src : "audio/6.mp3",
+            lifeTime : 8,
+            delay : 0
+        }, {
+            src : "audio/8.mp3",
+            lifeTime : 8,
+            delay : 0
+        }, {
+            src : "audio/9.mp3",
+            lifeTime : 8,
+            delay : 0
+        }, {
+            src : "audio/10.mp3",
+            lifeTime : 8,
+            delay : 0
+        }
+    ];
     // 组建TimeLine
     util.loopArray( scences, function ( s, i ) {
         TimeLine.push( new Scence( {
@@ -35,7 +74,7 @@ main( function () {
     var subtitles = [
         {
             duration : 8,
-            //delay:,
+            //delay : 0,
             text : "人们常说：单身只有两种情况：一种不知道什么叫做，爱。"
         },
         {
@@ -48,5 +87,5 @@ main( function () {
         }
     ];
 
-    sys.play( TimeLine, subtitles );
+    sys.play( TimeLine );
 } );
