@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="mobileoptimized" content="0"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            -webkit-user-select: none;
+        }
+
+        html, body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+<script src="../../lib/package.js"></script>
+<script>
+    main( function () {
+        var util = imports( "../../lib/util.js" );
+        var css = imports( "../../lib/css.js" );
+        var dom = imports( "../../lib/dom.js" );
+
+        var img = [];
+        util.loop( 9, function ( i ) {
+            img.push( "img/" + i + ".jpg" );
+        } );
+
+        img = img.concat( img );
+        img.shift();
+        var bw = 88 * img.length + 20;
+        var border = dom.element( "div", {
+            classList : "border",
+            css : {
+                height : "100px",
+                width : bw + "px",
+                position : "absolute",
+                top : "50%",
+                "-webkit-transform" : "translate3d(0,-50%,0)",
+                "text-align" : "center",
+                padding : "18px 0",
+                background : "url(img/film.jpg) repeat-x",
+                "background-size" : "auto 100%"
+            }
+        }, document.body );
+        var w = document.body.offsetWidth;
+        var h = document.body.offsetHeight;
+
+        util.loopArray( img, function ( src ) {
+            dom.element( "img", {
+                css : {
+                    height : "100%",
+                    margin : "0 10px",
+                    display : "inline-block"
+                },
+                src : src
+            }, border );
+        } );
+
+
+        css.insertCSSAnimate( {
+            slide : {
+                0 : {
+                    "-webkit-transform" : "translate3d(320px,-50%,0)"
+                },
+                45 : {
+                    "-webkit-transform" : "translate3d(-80%,-50%,0)"
+                },
+                80 : {
+                    "-webkit-transform" : "translate3d(-20%,-50%,0)"
+                },
+                100 : {
+                    "-webkit-transform" : "translate3d(" + (w - bw) / 2 + "px,-50%,0)"
+                }
+            }
+        } );
+
+        css.insertCSSRules( {
+            ".born.border" : {
+                "-webkit-animation" : "slide 13s ease-out 2s both"
+            }
+        } );
+
+
+        var s0 = dom.element( "img", {
+            classList : "s0",
+            src : img[((img.length / 2 << 0))],
+            css : {
+                opacity : 0,
+                position : "absolute",
+                top : "50%",
+                height : "100px",
+                left : "50%",
+                "-webkit-transform" : "translate3d(-50%,-50%,0)"
+            }
+        }, document.body );
+        css.insertCSSRules( {
+            ".born.s0" : {
+                "-webkit-animation" : "bigger 2s ease-out 1s forwards"
+            }
+        } );
+        css.insertCSSAnimate( {
+            bigger : {
+                0 : {
+                    opacity : 1
+                },
+                100 : {
+                    "-webkit-transform" : "translate3d(-50%,-50%,0) scale(" + h / 100 + ")",
+                    opacity : 1
+                }
+            }
+        } );
+        setTimeout( function () {
+            s0.classList.add( "born" );
+        }, 15000 );
+
+        border.classList.add( "born" );
+    } );
+</script>
+</body>
+</html>
