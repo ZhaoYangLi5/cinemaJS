@@ -203,6 +203,17 @@ html, body, .scence {
     background-size: cover;
 }
 
+/*第8页*/
+.s9-bg {
+    position: absolute;
+    height: 100%;
+}
+
+.s9-cloud {
+    background: url("../img/9-cloud.png") no-repeat center center;
+    background-size: cover;
+}
+
 /*动画*/
 @-webkit-keyframes shade-out {
     0% {

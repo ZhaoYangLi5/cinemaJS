@@ -23,11 +23,11 @@ main( function () {
         TimeLine.push( new Scence( {
             el : s,
             lifeTime : 8,
-            audio : {
-                src : musics[i],
-                delay : 0,
-                isJust : true
-            }
+            //audio : {
+            //    src : musics[i],
+            //    delay : 0,
+            //    isJust : true
+            //}
         } ) );
         document.body.removeChild( s );
     } );
