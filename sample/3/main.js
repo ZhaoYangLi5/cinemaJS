@@ -20,7 +20,7 @@ main( function () {
     var subtitle = [
         {
             text : "风吹落最后一片叶",
-            delay : 1.55
+            delay : 13.17
         },
         {
             text : "我的心也飘着雪",
