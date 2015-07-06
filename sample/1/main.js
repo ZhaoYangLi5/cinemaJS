@@ -32,14 +32,14 @@ main( function () {
             interval : 8
         }, {
             src : "audio/5.mp3",
-            interval : 15
+            interval : 13
         },
         {
             src : "audio/6.mp3",
-            interval : 8
+            interval : 12
         }, {
             src : "audio/8.mp3",
-            interval : 8
+            interval : 12
         }, {
             src : "audio/9.mp3",
             interval : 8
