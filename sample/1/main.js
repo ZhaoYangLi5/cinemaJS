@@ -39,17 +39,17 @@ main( function () {
             interval : 12
         }, {
             src : "audio/8.mp3",
-            interval : 14
+            interval : 11
         }, {
             src : "audio/9.mp3",
-            interval : 12
+            interval : 5
         }, {
             src : "audio/10.mp3",
-            interval : 8
+            interval : 3
         }
     ];
 
-    var ScenceTime = [8, 8, 8, 8, 15, 8, 8, 8, 8];
+    var ScenceTime = [8, 8, 8, 8, 15, 8, 3, 8, 8];
     // 组建TimeLine
     util.loopArray( scences, function ( s, i ) {
         TimeLine.push( new Scence( {

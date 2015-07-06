@@ -103,9 +103,11 @@ html, body, .scence {
     }
     80% {
         -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
     }
     100% {
         -webkit-transform: translate3d(0, 100%, 0);
+        opacity: 0;
     }
 }
 
@@ -126,7 +128,7 @@ html, body, .scence {
 }
 
 .born.scence.scence-9 {
-    -webkit-animation: fly-in 6s ease-out both;
+    -webkit-animation: fly-in 8s ease-out both;
 }
 
 .born.scence.scence-12 {
@@ -211,21 +213,21 @@ html, body, .scence {
 .born .snow.c {
     position: absolute;
     bottom: -10px;
-    left: 40%;
+    left: 20%;
     -webkit-animation: snow 5s ease-out 0.1s infinite both;
 }
 
 .born .snow.d {
     position: absolute;
     bottom: -10px;
-    left: 36%;
+    left: 16%;
     -webkit-animation: snow2 6s ease-out 0.1s infinite both;
 }
 
 .born .snow.e {
     position: absolute;
     bottom: -10px;
-    left: 46%;
+    left: 26%;
     -webkit-animation: snow2 9s ease-out 0.1s infinite both;
 }
 
@@ -239,7 +241,7 @@ html, body, .scence {
 .born .snow.g {
     position: absolute;
     bottom: -10px;
-    left: 55%;
+    left: 35%;
     -webkit-animation: snow2 7s ease-out 0.3s infinite both;
 }
 
