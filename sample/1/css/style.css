@@ -411,3 +411,30 @@ html, body, .scence {
         -webkit-transform: rotateZ(0deg);
     }
 }
+
+.scence-10 {
+    background: #000;
+    color: #ddd;
+    line-height: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.born.scence.scence-10 {
+    -webkit-animation: last 6s ease-out both;
+}
+
+@-webkit-keyframes last {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+    }
+    20% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    80% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
