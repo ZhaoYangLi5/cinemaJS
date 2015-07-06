@@ -20,41 +20,32 @@ main( function () {
     var musics = [
         {
             src : "audio/1.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 0
         }, {
             src : "audio/2.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 8
         }, {
             src : "audio/3.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 8
         }, {
             src : "audio/4.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 8
         }, {
             src : "audio/5.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 15
         },
         {
             src : "audio/6.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 8
         }, {
             src : "audio/8.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 8
         }, {
             src : "audio/9.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 8
         }, {
             src : "audio/10.mp3",
-            lifeTime : 8,
-            delay : 0
+            interval : 8
         }
     ];
 
@@ -63,12 +54,7 @@ main( function () {
     util.loopArray( scences, function ( s, i ) {
         TimeLine.push( new Scence( {
             el : s,
-            lifeTime : ScenceTime[i],
-            //audio : {
-            //src : musics[i],
-            //delay : 0,
-            //isJust : true
-            //}
+            lifeTime : ScenceTime[i]
         } ) );
         document.body.removeChild( s );
     } );
@@ -89,5 +75,5 @@ main( function () {
         }
     ];
 
-    sys.play( TimeLine );
+    sys.play( TimeLine, null, musics );
 } );
