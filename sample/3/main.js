@@ -137,6 +137,10 @@ main( function () {
         {
             text : "一样寂寞的季节",
             delay : 7.38
+        },
+        {
+            text : "",
+            delay : 4.38
         }
     ];
     sys.play( TimeLine, subtitle, null );

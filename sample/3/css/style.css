@@ -160,3 +160,11 @@ html, body, .scence {
 .born.scence.scence-31 {
     -webkit-animation: fly-in 6s ease-out both;
 }
+
+.scence-20 {
+    background: #000;
+    color: #ddd;
+    line-height: 100%;
+    text-align: center;
+    font-size: 30px;
+}
