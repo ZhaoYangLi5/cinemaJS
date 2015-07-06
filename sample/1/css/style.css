@@ -226,7 +226,7 @@ html, body, .scence {
 
 /*第7页*/
 .born.scence-7 {
-    -webkit-animation: page-animate 4s ease-out both;
+    -webkit-animation: page-animate 3s ease-out both;
 }
 
 .s7-bg {
