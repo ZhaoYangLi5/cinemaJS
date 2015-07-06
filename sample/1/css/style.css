@@ -226,7 +226,7 @@ html, body, .scence {
 
 /*第7页*/
 .born.scence-7 {
-    -webkit-animation: page-animate 8s ease-out both;
+    -webkit-animation: page-animate 4s ease-out both;
 }
 
 .s7-bg {
@@ -240,7 +240,7 @@ html, body, .scence {
 }
 
 .born .s7-cloud {
-    -webkit-animation: fade-in 2s ease-out 2s both;
+    -webkit-animation: fade-in 2s ease-out 1s both;
 }
 
 .s7-face {
