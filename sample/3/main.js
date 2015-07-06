@@ -44,14 +44,99 @@ main( function () {
         },
         {
             text : "oh~　整条街　都是恋爱的人",
-            delay : 4.55
+            delay : 5.55
         },
         {
             text : "我独自走在暖风的夜",
             delay : 6.78
-        }, {
+        },
+        {
             text : "多想要向过去告別",
             delay : 9.14
+        },
+        {
+            text : "当季节不停更迭　oh~",
+            delay : 6.41
+        },
+        {
+            text : "却还是少一点坚决",
+            delay : 5.51
+        },
+        {
+            text : "在这寂寞的季节",
+            delay : 6.51
+        },
+        {
+            text : "艳阳高照在那海边",
+            delay : 7.15
+        },
+        {
+            text : "爱情盛开的世界",
+            delay : 6.3
+        },
+        {
+            text : "远远看着热闹一切",
+            delay : 5.83
+        },
+        {
+            text : "oh~　我记得那狂烈",
+            delay : 5.2
+        },
+        {
+            text : "窗外是快枯黃的叶",
+            delay : 6.52
+        },
+        {
+            text : "感伤在心中有一些　oh~",
+            delay : 6.22
+        },
+        {
+            text : "我瞭解　那些爱过的人",
+            delay : 6.42
+        },
+        {
+            text : "心是如何慢慢在凋谢",
+            delay : 5.69
+        },
+        {
+            text : "多想要向过去告別",
+            delay : 5.71
+        },
+        {
+            text : "当季节不停更迭　oh~",
+            delay : 6.82
+        },
+        {
+            text : "却永远少一点坚决",
+            delay : 5.26
+        },
+        {
+            text : "在这寂寞的季节",
+            delay : 6.79
+        },
+        {
+            text : "又走过风吹的冷冽",
+            delay : 6.58
+        },
+        {
+            text : "最后一盏灯熄灭",
+            delay : 7.06
+        },
+        {
+            text : "从回忆我慢慢穿越",
+            delay : 5.59
+        },
+        {
+            text : "在这寂寞的季节",
+            delay : 5.77
+        },
+        {
+            text : "还是寂寞的季节",
+            delay : 5.12
+        },
+        {
+            text : "一样寂寞的季节",
+            delay : 7.38
         }
     ];
     sys.play( TimeLine, subtitle, null );
