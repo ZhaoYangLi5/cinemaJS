@@ -161,10 +161,122 @@ html, body, .scence {
     -webkit-animation: fly-in 6s ease-out both;
 }
 
-.scence-20 {
+.scence-8 {
     background: #000;
     color: #ddd;
     line-height: 100%;
     text-align: center;
     font-size: 30px;
+}
+
+.born.scence.scence-8 {
+    -webkit-animation: last 6s ease-out both;
+}
+
+@-webkit-keyframes last {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+    }
+    20% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    80% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.snow {
+    width: 4px;
+    height: 4px;
+    background: white;
+}
+
+.born .snow.a {
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+    -webkit-animation: snow 8s ease-out 0s infinite both;
+}
+
+.born .snow.b {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    -webkit-animation: snow2 8s ease-out 0.2s infinite both;
+}
+
+.born .snow.c {
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    -webkit-animation: snow 5s ease-out 0.1s infinite both;
+}
+
+.born .snow.d {
+    position: absolute;
+    bottom: -10px;
+    left: 36%;
+    -webkit-animation: snow2 6s ease-out 0.1s infinite both;
+}
+
+.born .snow.e {
+    position: absolute;
+    bottom: -10px;
+    left: 46%;
+    -webkit-animation: snow2 9s ease-out 0.1s infinite both;
+}
+
+.born .snow.f {
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    -webkit-animation: snow 9s ease-out 0.1s infinite both;
+}
+
+.born .snow.g {
+    position: absolute;
+    bottom: -10px;
+    left: 55%;
+    -webkit-animation: snow2 7s ease-out 0.3s infinite both;
+}
+
+@-webkit-keyframes snow {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translate3d(100px, -100px, 0) scale(1.3) rotateZ(10deg);
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: translate3d(200px, -400px, 0) scale(.9) rotateZ(-20deg);
+    }
+    100% {
+        -webkit-transform: translate3d(300px, -1000px, 0) scale(1) rotateZ(40deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes snow2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translate3d(20px, -100px, 0) scale(1.3) rotateZ(10deg);
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: translate3d(200px, -400px, 0) scale(.9) rotateZ(-20deg);
+    }
+    100% {
+        -webkit-transform: translate3d(-150px, -1000px, 0) scale(1) rotateZ(40deg);
+        opacity: 0;
+    }
 }
