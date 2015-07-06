@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    -webkit-user-select: none;
+}
+
+html, body, .scence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background: white;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*第1页*/
+.a-bg-0 {
+    background: url("../img/0-bg.png") no-repeat center center;
+    background-size: cover;
+}
+
+.a-girl {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+}
+
+@-webkit-keyframes page-animate {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.born.scence {
+    -webkit-animation: page-animate 6s ease-out both;
+}
